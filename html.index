@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Florybal - Loja Autorizada Nova Petrópolis</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CABEÇALHO DA LOJA -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo-area">
+        <img src="https://i.postimg.cc/z3KWwWDG/logo-loja.jpg" alt="Florybal Nova Petrópolis" class="site-logo" />
+      </div>
+      <a href="https://wa.me/5554999008909?text=Olá!%20Gostaria%20de%20informações%20sobre%20os%20chocolates." target="_blank" class="btn-whats-header">
+        <i class="fa-brands fa-whatsapp"></i> Falar na Loja
+      </a>
+    </div>
+  </header>
+
+  <!-- BANNER PRINCIPAL (HERO POSTER) -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <span class="hero-subtitle">Chocolates Caseiros da Serra Gaúcha</span>
+        <h1>Loja Autorizada Nova Petrópolis</h1>
+        <p>Consulte nosso catálogo e encomende via WhatsApp com entrega no seu hotel/pousada ou retirada na loja!</p>
+        
+        <!-- CARD DE HORÁRIOS EMBUTIDO NO BANNER -->
+        <div class="hero-hours-card">
+          <i class="fa-solid fa-clock icon-gold"></i>
+          <div>
+            <strong>Horário de Funcionamento</strong>
+            <span>Segunda a Quinta e Domingo: 9h às 18h30 | Sexta e Sábado: 9h às 19h</span>
+          </div>
+        </div>
+
+        <a href="#catalogo" class="btn-primary">Ver Catálogo de Chocolates</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section id="catalogo" class="catalog-section container">
+    <div class="section-title">
+      <h2>Nosso Catálogo</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <!-- Barra de Pesquisa e Filtros de Categoria -->
+    <div class="filter-bar">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Buscar por produto..." />
+      </div>
+      <div class="category-buttons" id="categoryButtons">
+        <button class="cat-btn active" data-category="Todos">Todos</button>
+        <button class="cat-btn" data-category="INFANTIL">Infantil</button>
+        <button class="cat-btn" data-category="BARRAS">Barras</button>
+        <button class="cat-btn" data-category="BOMBONS">Bombons</button>
+        <button class="cat-btn" data-category="TRUFAS">Trufas</button>
+        <button class="cat-btn" data-category="ALFAJORES">Alfajores</button>
+        <button class="cat-btn" data-category="DRÁGEAS">Drágeas</button>
+        <button class="cat-btn" data-category="CAIXAS, CESTAS E PRESENTES">Presentes</button>
+        <button class="cat-btn" data-category="OUTROS">Outros</button>
+      </div>
+    </div>
+
+    <!-- GRID DE PRODUTOS -->
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <!-- INFORMAÇÕES DA LOJA E MAPA -->
+  <section class="store-info-section">
+    <div class="container store-container">
+      <div class="store-card">
+        <i class="fa-solid fa-store icon-large"></i>
+        <h3>Visite Nossa Loja</h3>
+        <p><strong>Endereço:</strong> Av. 15 de Novembro, 1333, Centro, Nova Petrópolis - RS</p>
+        <p><strong>Destaque:</strong> Chocolates caseiros e o famoso chocolate quente cremoso.</p>
+        <a href="https://maps.google.com/?q=Av.+15+de+Novembro,+1333+-+Centro,+Nova+Petrópolis+-+RS" target="_blank" class="btn-secondary">
+          <i class="fa-solid fa-map-location-dot"></i> Abrir no Maps
+        </a>
+      </div>
+
+      <div class="store-card highlight-card">
+        <i class="fa-solid fa-truck-ramp-box icon-large"></i>
+        <h3>Entrega em Pousadas & Hotéis</h3>
+        <p>Hospedado em Nova Petrópolis? Solicite pelo WhatsApp e entregamos direto no seu hotel/pousada!</p>
+        <a href="https://wa.me/5554999008909?text=Olá!%20Gostaria%20de%20solicitar%20uma%20entrega%20na%20minha%20pousada/hotel." target="_blank" class="btn-secondary">
+          Solicitar Entrega
+        </a>
+      </div>
+
+      <div class="store-card">
+        <i class="fa-solid fa-clock icon-large"></i>
+        <h3>Horários de Atendimento</h3>
+        <p><strong>Segunda a Quinta:</strong> 9h às 18h30</p>
+        <p><strong>Sexta e Sábado:</strong> 9h às 19h</p>
+        <p><strong>Domingo:</strong> 9h às 18h30</p>
+      </div>
+    </div>
+
+    <!-- MAPA INTERATIVO GOOGLE MAPS -->
+    <div class="container map-wrapper">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.892842034175!2d-51.1165181!3d-29.3587848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95193214b6dd6cd9%3A0x217d1e8c07843cd5!2sAv.%2015%20de%20Novembro%2C%201333%20-%20Centro%2C%20Nova%20Petr%C3%B3polis%20-%20RS%2C%2095150-000!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+        width="100%" 
+        height="320" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container footer-content">
+      <p><strong>Florybal - Loja Autorizada Nova Petrópolis</strong></p>
+      <p>Contato & WhatsApp: +55 (54) 99900-8909</p>
+      <p class="copyright">&copy; Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5554999008909?text=Olá!%20Vim%20pelo%20site%20da%20loja%20de%20Nova%20Petrópolis." target="_blank" class="whatsapp-float" title="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
